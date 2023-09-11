@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  payment form </title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<style>
+    *{ 
+        text-align: center;
+        background-color: bisque;
+    }
+    h1{
+        background-color: darkgray;
+    }
+    h2{ 
+    
+        background-color: rgb(223, 14, 14);
+    }
+    
+</style>
+<body>
+    <form action=""method="get">
+    <h1>   Payment Form</h1>
+    <hr>
+
+    <h2> User Information  </h2>
+    <p>Name <br> <input type="text" name="name" id="name"required placeholder="xxxxx" ></p>
+
+<p>Email <br><input type="email" name="email" id="email"required placeholder="xxx@gmail.com"></p>
+<p>Password <br><input type="password" name="password" id="password" required placeholder="********"></p>
+
+<h2 class="a">  Payment Information</h2>
+<p>Card Type
+    <select name="card type" id="card type"required>
+<option value="">--select a card type-- </option>
+<option value="visa">visa</option>
+<option value="mastercard">mastercard</option>
+<option value="phonepay">phonepay</option>
+</p>
+</select>
+<P>
+    Card Number <input type="number" name="cardnumber" id="cardnumber"required placeholder="xxxx-xxxx-xxxx">
+</P>
+<p>
+    Expiration Date <input type="date" name="exp date" id="exp date"required>
+</p>
+<p>
+    Cvv <input type="password" name="cvv" id="cvv"required placeholder="xxxxx">
+</p>
+<div><input type="submit" value="Pay now" ></div>
+
+
+    </form>
+</body>
+</html>
